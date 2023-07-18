@@ -1,7 +1,7 @@
 # Analysis of Vietnam High School Graduation 2022 Exams
 
 
-## Introduction:
+## Introduction
 The final examination from high school to university in Vietnam is a significant milestone that determines students' admission to higher education institutions. This project aims to analyze the examination process, exploring its structure, content, and impact on student's academic paths. By understanding this system, we can contribute to discussions on educational reform and student support, ultimately empowering Vietnamese students in their pursuit of academic success and personal growth.✨📚📊
 
 ## Dataset
@@ -27,3 +27,10 @@ This hypothesis examines the relationship between math grades and students' incl
 This hypothesis investigates the potential impact of city characteristics on student performance. It focuses on the contrasting features of Ha Noi, with its rich history and culture, and Ho Chi Minh City, known for its technological advancements. The hypothesis explores whether these city attributes can affect student performance on exams.
 
 ## Methodology
+* **Cities longitude latitude**: I search on Google for each city manually but after the plotting phase noticed that they need to be recalibrated -1 on each metric to achieve good result.
+
+* **Student chose Science**: Each Student can choose only one Science category. So if in a student 'Biology' cell in empty then we conclude that he or she is on Social Science.
+
+* **Population prediction**: Our original dataset only has a population of 1999, 2009, and 2019. To retreive population of 2022 for data relevancy we used Arima model and divided the gap year 2009 to 2019 in to one year gap like 2009, 2010, 2011,..., 2018, 2019 and the population go in a linear way and feed into my Arima with the step of 3 and retreive the result is population of 2022.
+
+## Results
